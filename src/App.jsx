@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import { filtrarGastosPorCategoria, somarGastos } from './dominio/gastos.js'
-import { carregarGastos, salvarGastos } from './infraestrutura/armazenamentoGastos.js'
-import FormularioGasto from './apresentacao/componentes/FormularioGasto.jsx'
-import FiltroGastos from './apresentacao/componentes/FiltroGastos.jsx'
-import ListaGastos from './apresentacao/componentes/ListaGastos.jsx'
-import TotalGastos from './apresentacao/componentes/TotalGastos.jsx'
+import { filtrarGastosPorCategoria, somarGastos } from './domain/gastos.js'
+import { carregarGastos, salvarGastos } from './infrastructure/armazenamentoGastos.js'
+import FormularioGasto from './presentation/components/FormularioGasto.jsx'
+import FiltroGastos from './presentation/components/FiltroGastos.jsx'
+import ListaGastos from './presentation/components/ListaGastos.jsx'
+import TotalGastos from './presentation/components/TotalGastos.jsx'
 import './App.css'
 
 function App() {

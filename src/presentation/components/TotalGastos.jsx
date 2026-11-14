@@ -1,4 +1,4 @@
-import { formatarMoeda } from '../formatadores/moeda.js'
+import { formatarMoeda } from '../formatters/moeda.js'
 
 function TotalGastos({ totalCentavos }) {
   return (

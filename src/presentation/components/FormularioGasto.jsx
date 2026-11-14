@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { validarGasto } from '../../dominio/gastos.js'
-import { converterParaCentavos, formatarMoeda } from '../formatadores/moeda.js'
+import { validarGasto } from '../../domain/gastos.js'
+import { converterParaCentavos, formatarMoeda } from '../formatters/moeda.js'
 
 function FormularioGasto({ gastos, aoAdicionar }) {
   const [descricao, definirDescricao] = useState('')
