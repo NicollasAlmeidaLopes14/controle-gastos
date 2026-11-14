@@ -12,9 +12,9 @@ Resposta: Para que, sempre que adicionar comentários no código, eles sejam em 
 
 ## Passo 2 · Estrutura
 2.1 Quais arquivos o plano criou ou alterou?
-Resposta:
+Resposta: FormularioGasto.jsx, ListaGastos.jsx, TotalGastos.jsx, App.jsx, App.css, index.css
 2.2 Qual regra do AGENTS.md você viu sendo aplicada?
-Resposta:
+Resposta: Todas as regras foram seguidas/aplicadas corretamente.
 
 ## Missão 1 · Adicionar
 M1.1 Como o app trata "12,50" com vírgula? Quem decidiu isso: você ou o agente?
