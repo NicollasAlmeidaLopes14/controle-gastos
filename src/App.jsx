@@ -1,12 +1,15 @@
 import { useState } from 'react'
-import { somarGastos } from './dominio/gastos.js'
+import { filtrarGastosPorCategoria, somarGastos } from './dominio/gastos.js'
 import FormularioGasto from './apresentacao/componentes/FormularioGasto.jsx'
+import FiltroGastos from './apresentacao/componentes/FiltroGastos.jsx'
 import ListaGastos from './apresentacao/componentes/ListaGastos.jsx'
 import TotalGastos from './apresentacao/componentes/TotalGastos.jsx'
 import './App.css'
 
 function App() {
   const [gastos, definirGastos] = useState([])
+  const [categoriaSelecionada, definirCategoriaSelecionada] = useState('')
+  const gastosFiltrados = filtrarGastosPorCategoria(gastos, categoriaSelecionada)
 
   function adicionarGasto(gasto) {
     definirGastos((gastosAtuais) => [...gastosAtuais, { ...gasto, identificador: crypto.randomUUID() }])
@@ -22,8 +25,16 @@ function App() {
     <main className="controle-gastos">
       <h1>Controle de gastos</h1>
       <FormularioGasto gastos={gastos} aoAdicionar={adicionarGasto} />
-      <ListaGastos gastos={gastos} aoRemover={removerGasto} />
-      <TotalGastos totalCentavos={somarGastos(gastos)} />
+      <FiltroGastos
+        categoriaSelecionada={categoriaSelecionada}
+        aoAlterarCategoria={definirCategoriaSelecionada}
+      />
+      <ListaGastos
+        gastos={gastosFiltrados}
+        categoriaSelecionada={categoriaSelecionada}
+        aoRemover={removerGasto}
+      />
+      <TotalGastos totalCentavos={somarGastos(gastosFiltrados)} />
     </main>
   )
 }

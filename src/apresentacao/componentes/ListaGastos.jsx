@@ -7,12 +7,16 @@ const nomesCategorias = {
   outros: 'Outros',
 }
 
-function ListaGastos({ gastos, aoRemover }) {
+function ListaGastos({ gastos, categoriaSelecionada, aoRemover }) {
   return (
     <section className="painel" aria-labelledby="titulo-lista">
       <h2 id="titulo-lista">Gastos</h2>
       {gastos.length === 0 ? (
-        <p className="lista-vazia">Nenhum gasto cadastrado</p>
+        <p className="lista-vazia" role="status">
+          {categoriaSelecionada
+            ? 'Não existem gastos nesta categoria.'
+            : 'Nenhum gasto cadastrado'}
+        </p>
       ) : (
         <ul className="lista-gastos">
           {gastos.map((gasto) => (

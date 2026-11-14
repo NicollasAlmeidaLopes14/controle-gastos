@@ -17,3 +17,9 @@ export function validarGasto(descricao, valorCentavos, gastos) {
 export function somarGastos(gastos) {
   return gastos.reduce((totalCentavos, gasto) => totalCentavos + gasto.valorCentavos, 0)
 }
+
+export function filtrarGastosPorCategoria(gastos, categoriaSelecionada) {
+  if (categoriaSelecionada === '') return gastos
+
+  return gastos.filter((gasto) => gasto.categoria === categoriaSelecionada)
+}

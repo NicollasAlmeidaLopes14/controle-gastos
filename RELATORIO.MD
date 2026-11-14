@@ -36,9 +36,9 @@ Resposta: O identificador do gasto que quero remover é passado como parâmetro 
 
 ## Missão 4 · Filtrar
 M4.1 Qual foi o seu prompt da tentativa B?
-Resposta:
+Resposta: Planeje um filtro por categoria que deverá listar somente os gastos por categoria. Caso não haja gastos na categoria filtrada, deve informar que não existem gastos naquele categoria. Ao adicionar um gasto com uma categoria selecionada, deve preservar a categoria selecionada, ou seje, ao listar os gastos pela categoria x, mas adicionando um gasto na categoria y, a lista deve continuar mostrando os gastos da categoria x.
 M4.2 Qual tentativa gerou o melhor plano, A ou B? Por quê?
-Resposta:
+Resposta: Os dois foram bem parelhos. Acredito que por estar utilizando um modelo excelente, só de colococar o prompt A ele já sugeriu exatamento uma filtragem por categoria com bons detalhes, mas pelo fato do segundo prompt estar mais completo com aquilo que quero, acabei optando por ele.
 
 ## Bônus · Salvar
 B.1 Onde o localStorage guarda os dados?
