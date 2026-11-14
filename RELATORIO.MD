@@ -24,9 +24,9 @@ Resposta: 7
 
 ## Missão 2 · Total
 M2.1 Quanto deu 0,10 + 0,20 no app?
-Resposta:
+Resposta: 0,30.
 M2.2 Por que 0.1 + 0.2 não dá exatamente 0.3 no JavaScript?
-Resposta:
+Resposta: Porque os computadores armazenam números decimais na base binária e não na decimal, causando dízimas binárias infinitas.
 
 ## Missão 3 · Remover
 M3.1 O agente mudou algo que você não pediu? O quê?
