@@ -42,16 +42,16 @@ Resposta: Os dois foram bem parelhos. Acredito que por estar utilizando um model
 
 ## Bônus · Salvar
 B.1 Onde o localStorage guarda os dados?
-Resposta:
+Resposta: O localStorage guarda os dados no navegador.
 B.2 Por que os gastos não aparecem em outro navegador?
-Resposta:
+Resposta: Porque ele fica vinculado exclusivamente à origem do site.
 
 ## Reflexão final
 R.1 Sem olhar o código, explique como um dos seus componentes recebe e altera os gastos.
-Resposta:
+Resposta: O TotalGastos.jsx recebe os valores através de um parâmetro onde o valor está em centavos para realizar a formatação através do utilitário moeda.js e mostrar o valor devidamente formatado. No App.jsx, ao chamar o componente do total, é passado como prop a função que soma todos os valores dos gastos.
 R.2 Em que momento você aceitou algo sem entender?
-Resposta:
+Resposta: Nenhum. Tudo que foi pedido eu analisei o código e busquei entender
 R.3 Quais decisões foram suas e quais foram do agente?
-Resposta:
+Resposta: Filtro por categoria ficar acima do componente de listagem dos gastos e, acredito que a mais importante, trabalhar sempre com os valores em centavos para realizar a formatação da moeda.
 R.4 O que continuaria valendo se você trocasse o modelo?
-Resposta:
+Resposta: Praticamente tudo, mas acredito que a tratativa dos valores em centavos provavelmente mudaria, pois foi escolha do modelo.

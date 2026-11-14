@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { filtrarGastosPorCategoria, somarGastos } from './dominio/gastos.js'
+import { carregarGastos, salvarGastos } from './infraestrutura/armazenamentoGastos.js'
 import FormularioGasto from './apresentacao/componentes/FormularioGasto.jsx'
 import FiltroGastos from './apresentacao/componentes/FiltroGastos.jsx'
 import ListaGastos from './apresentacao/componentes/ListaGastos.jsx'
@@ -7,9 +8,13 @@ import TotalGastos from './apresentacao/componentes/TotalGastos.jsx'
 import './App.css'
 
 function App() {
-  const [gastos, definirGastos] = useState([])
+  const [gastos, definirGastos] = useState(carregarGastos)
   const [categoriaSelecionada, definirCategoriaSelecionada] = useState('')
   const gastosFiltrados = filtrarGastosPorCategoria(gastos, categoriaSelecionada)
+
+  useEffect(() => {
+    salvarGastos(gastos)
+  }, [gastos])
 
   function adicionarGasto(gasto) {
     definirGastos((gastosAtuais) => [...gastosAtuais, { ...gasto, identificador: crypto.randomUUID() }])
