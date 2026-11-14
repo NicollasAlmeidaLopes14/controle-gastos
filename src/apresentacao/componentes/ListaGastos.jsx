@@ -7,7 +7,7 @@ const nomesCategorias = {
   outros: 'Outros',
 }
 
-function ListaGastos({ gastos }) {
+function ListaGastos({ gastos, aoRemover }) {
   return (
     <section className="painel" aria-labelledby="titulo-lista">
       <h2 id="titulo-lista">Gastos</h2>
@@ -22,6 +22,14 @@ function ListaGastos({ gastos }) {
                 <span>{nomesCategorias[gasto.categoria]}</span>
               </div>
               <span className="valor-gasto">{formatarMoeda(gasto.valorCentavos)}</span>
+              <button
+                type="button"
+                className="botao-remover"
+                aria-label={`Remover gasto: ${gasto.descricao}`}
+                onClick={() => aoRemover(gasto.identificador)}
+              >
+                Remover
+              </button>
             </li>
           ))}
         </ul>

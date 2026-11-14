@@ -12,11 +12,17 @@ function App() {
     definirGastos((gastosAtuais) => [...gastosAtuais, { ...gasto, identificador: crypto.randomUUID() }])
   }
 
+  function removerGasto(identificador) {
+    definirGastos((gastosAtuais) =>
+      gastosAtuais.filter((gasto) => gasto.identificador !== identificador),
+    )
+  }
+
   return (
     <main className="controle-gastos">
       <h1>Controle de gastos</h1>
       <FormularioGasto gastos={gastos} aoAdicionar={adicionarGasto} />
-      <ListaGastos gastos={gastos} />
+      <ListaGastos gastos={gastos} aoRemover={removerGasto} />
       <TotalGastos totalCentavos={somarGastos(gastos)} />
     </main>
   )

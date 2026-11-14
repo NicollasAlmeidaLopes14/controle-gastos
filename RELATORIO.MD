@@ -30,9 +30,9 @@ Resposta: Porque os computadores armazenam números decimais na base binária e 
 
 ## Missão 3 · Remover
 M3.1 O agente mudou algo que você não pediu? O quê?
-Resposta:
+Resposta: Não
 M3.2 Como o código sabe qual gasto remover?
-Resposta:
+Resposta: O identificador do gasto que quero remover é passado como parâmetro na função removerGasto.
 
 ## Missão 4 · Filtrar
 M4.1 Qual foi o seu prompt da tentativa B?
