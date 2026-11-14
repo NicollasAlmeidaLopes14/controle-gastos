@@ -18,9 +18,9 @@ Resposta: Todas as regras foram seguidas/aplicadas corretamente.
 
 ## Missão 1 · Adicionar
 M1.1 Como o app trata "12,50" com vírgula? Quem decidiu isso: você ou o agente?
-Resposta:
+Resposta: Trata a soma exata dos valores decimais. Isso foi decidido por mim.
 M1.2 Quantas tool calls a missão usou?
-Resposta:
+Resposta: 7
 
 ## Missão 2 · Total
 M2.1 Quanto deu 0,10 + 0,20 no app?

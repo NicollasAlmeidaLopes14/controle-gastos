@@ -71,6 +71,46 @@
   text-align: center;
 }
 
+.mensagem-erro {
+  color: #b42318;
+  font-size: 0.875rem;
+}
+
+.campo input[aria-invalid='true'] {
+  border-color: #b42318;
+}
+
+.lista-gastos {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-gasto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.detalhes-gasto {
+  display: grid;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.detalhes-gasto span {
+  color: var(--cor-texto-secundario);
+}
+
+.valor-gasto {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .total-gastos {
   display: flex;
   align-items: center;

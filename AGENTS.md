@@ -18,3 +18,4 @@
 - Não instale bibliotecas novas;
 - Não crie e nem edite o arquivo RELATORIO.md;
 - Todas as variáveis também devem estar em pt-br;
+- Os nomes das pastas podem ser o padrão. Ex: Components, Hooks etc.
