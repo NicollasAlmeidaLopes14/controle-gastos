@@ -5,9 +5,10 @@ Modelo usado: GPT-6.1 Sol
 
 ## Passo 1 · AGENTS.md
 1.1 O que o /init descobriu sozinho sobre o projeto?
-Resposta:
+Resposta: Descobriu que o projeto é uma estrutura inicial em React + Vite, o fluxo da aplicação, as finalidades de cada arquivo .md e os comandos de build do projeto.
+
 1.2 Qual regra você adicionou ao AGENTS.md e por quê?
-Resposta:
+Resposta: Para que, sempre que adicionar comentários no código, eles sejam em Pt-br; Utilizar a arquitetura por camadas (layers) porque é padrão de mercado e de fácil compreensão; não adicionar nada além do que for pedido, vale tanto para funcionalidade quanto para bibliotecas; não editar o arquivo do relatório acadêmico. os nomes das variáveis serem em português-br também.
 
 ## Passo 2 · Estrutura
 2.1 Quais arquivos o plano criou ou alterou?
